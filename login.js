@@ -51,6 +51,7 @@ const setCookie = (Name, value, days) => {
     cookie += '; Path=/';
     document.cookie = cookie;
 
+
 };
 
 const deleteCookie = Name => {
@@ -69,19 +70,19 @@ const goToPage = url => {
 
 // button event handler
 
-document.getElementById('login').onClick = () => {
-    console.log("This button works")
-
-   let result  = document.getElementById('user').value;
-
-   let x = document.createElement('SPAN');
-
-   let y = document.createTextNode(result);
-
-   x.appendChild(y);
-   
-   document.body.appendChild(x);
-
-   console.log(result);
+    document.getElementById('login').onClick = () => {
+        console.log("This button works")
     
-}
+       let result  = document.getElementById('user').value;
+    
+       let x = document.createElement('SPAN');
+    
+       let y = document.createTextNode(result);
+    
+       x.appendChild(y);
+       
+       document.body.appendChild(x);
+    
+       console.log(result);
+        
+    }
